@@ -44,7 +44,7 @@ const App = () => {
   }, [inputValue]);
 
   useEffect(() => {
-    setLoading(true);
+    setLoading(false);
 
     getPicturesData(inputValue, page)
       .then((response) => {
